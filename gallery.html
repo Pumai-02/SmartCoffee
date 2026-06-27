@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | SmartCoffeeShop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <a class="logo" href="home.html">SmartCoffee</a>
+    <ul class="nav-links">
+      <li><a href="home.html" id="nav-home">Home</a></li>
+      <li><a href="about.html" id="nav-about">About</a></li>
+      <li><a href="menu.html" id="nav-menu">Menu</a></li>
+      <li><a href="gallery.html" id="nav-gallery" class="active">Gallery</a></li>
+      <li><a href="order.html" id="nav-order">Order</a></li>
+      <li><a href="contact.html" id="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-dark" onclick="toggleDark()">Dark</button>
+      <a class="btn-cart" href="order.html">Cart <span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </nav>
+
+  <main id="page-gallery" class="page active">
+    <div class="gallery-header">
+      <div class="section-label">Our space</div>
+      <div class="section-title">The SmartCoffee experience</div>
+      <p style="color:var(--text2);font-size:15px">From farm to cup, moments from our shop and the people who make it special.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gal-item" style="background: linear-gradient(135deg,#FAEEDA,#FAC775)"><div class="gal-inner">Pour</div><div class="gal-overlay"><div class="gal-caption">The perfect pour</div></div></div>
+      <div class="gal-item" style="background: linear-gradient(135deg,#E1F5EE,#9FE1CB)"><div class="gal-inner">Beans</div><div class="gal-overlay"><div class="gal-caption">Single-origin beans</div></div></div>
+      <div class="gal-item" style="background: linear-gradient(135deg,#FAECE7,#F5C4B3)"><div class="gal-inner">Bake</div><div class="gal-overlay"><div class="gal-caption">Fresh pastries daily</div></div></div>
+      <div class="gal-item" style="background: linear-gradient(135deg,#EEEDFE,#CECBF6)"><div class="gal-inner">Cold</div><div class="gal-overlay"><div class="gal-caption">Cold brew season</div></div></div>
+      <div class="gal-item" style="background: linear-gradient(135deg,#E6F1FB,#B5D4F4)"><div class="gal-inner">Farm</div><div class="gal-overlay"><div class="gal-caption">Direct-trade sourcing</div></div></div>
+      <div class="gal-item" style="background: linear-gradient(135deg,#EAF3DE,#C0DD97)"><div class="gal-inner">Tea</div><div class="gal-overlay"><div class="gal-caption">Matcha ceremony</div></div></div>
+      <div class="gal-item" style="background: linear-gradient(135deg,#FAEEDA,#EF9F27)"><div class="gal-inner">Roast</div><div class="gal-overlay"><div class="gal-caption">The roasting room</div></div></div>
+      <div class="gal-item" style="background: linear-gradient(135deg,#FCEBEB,#F7C1C1)"><div class="gal-inner">Care</div><div class="gal-overlay"><div class="gal-caption">Made with love</div></div></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">SmartCoffee</div>
+    <div>© 2026 SmartCoffeeShop. All rights reserved.</div>
+    <div>Made with great beans.</div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

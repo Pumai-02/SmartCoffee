@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | SmartCoffeeShop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <a class="logo" href="home.html">SmartCoffee</a>
+    <ul class="nav-links">
+      <li><a href="home.html" id="nav-home">Home</a></li>
+      <li><a href="about.html" id="nav-about" class="active">About</a></li>
+      <li><a href="menu.html" id="nav-menu">Menu</a></li>
+      <li><a href="gallery.html" id="nav-gallery">Gallery</a></li>
+      <li><a href="order.html" id="nav-order">Order</a></li>
+      <li><a href="contact.html" id="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-dark" onclick="toggleDark()">Dark</button>
+      <a class="btn-cart" href="order.html">Cart <span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </nav>
+
+  <main id="page-about" class="page active">
+    <div class="about-hero">
+      <div class="about-img-box"><img src="https://i.pinimg.com/736x/f0/65/5f/f0655f2737da76be9b4ac435c65e3d9b.jpg" alt=""></div>
+      <div class="about-text">
+        <div class="section-label">Our story</div>
+        <h2>More than coffee.<br>It's community.</h2>
+        <p>SmartCoffeeShop started in 2015 as a tiny cart outside a library. Our founder Maria Chen had one obsession: finding the world's best beans and turning them into the perfect cup.</p>
+        <p style="margin-top:14px">We work directly with farms across six countries, paying above fair-trade prices and roasting every bag in-house.</p>
+      </div>
+    </div>
+
+    <div class="section-sm" style="padding-left:40px; padding-right:40px; padding-top:10px">
+      <div class="stats-row">
+        <div class="stat-item"><div class="big">10</div><div class="caption">Years in business</div></div>
+        <div class="stat-item"><div class="big">5</div><div class="caption">Locations</div></div>
+        <div class="stat-item"><div class="big">48</div><div class="caption">Baristas</div></div>
+        <div class="stat-item"><div class="big">12</div><div class="caption">Awards won</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">The team</div>
+      <div class="section-title">Meet your baristas</div>
+      <div class="section-sub">Trained by world-class coffee champions, passionate about every cup.</div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">MC</div>
+          <h3>Maria Chen</h3>
+          <div class="role">Founder & Head Roaster</div>
+          <p>World Barista Championship finalist with 15 years exploring coffee's potential.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">DO</div>
+          <h3>David Osei</h3>
+          <div class="role">Lead Barista</div>
+          <p>Latte art champion who brings precision to every espresso pull.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">YT</div>
+          <h3>Yuki Tanaka</h3>
+          <div class="role">Pastry Chef</div>
+          <p>Tokyo-trained pastry artist. Her croissants are baked fresh daily.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">SmartCoffee</div>
+    <div>© 2026 SmartCoffeeShop. All rights reserved.</div>
+    <div>Made with great beans.</div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

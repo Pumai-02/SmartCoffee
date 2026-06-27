@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | SmartCoffeeShop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <a class="logo" href="home.html">SmartCoffee</a>
+    <ul class="nav-links">
+      <li><a href="home.html" id="nav-home">Home</a></li>
+      <li><a href="about.html" id="nav-about">About</a></li>
+      <li><a href="menu.html" id="nav-menu" class="active">Menu</a></li>
+      <li><a href="gallery.html" id="nav-gallery">Gallery</a></li>
+      <li><a href="order.html" id="nav-order">Order</a></li>
+      <li><a href="contact.html" id="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-dark" onclick="toggleDark()">Dark</button>
+      <a class="btn-cart" href="order.html">Cart <span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </nav>
+
+  <main id="page-menu" class="page active">
+    <div class="menu-header">
+      <div class="section-label">What we serve</div>
+      <div class="section-title" style="margin-bottom:4px">Our menu</div>
+      <p style="color:var(--text2);font-size:15px">Fresh, seasonal, and always brewed to order.</p>
+      <div class="category-tabs">
+        <button class="cat-tab active" onclick="filterMenu('all', this)">All</button>
+        <button class="cat-tab" onclick="filterMenu('espresso', this)">Espresso</button>
+        <button class="cat-tab" onclick="filterMenu('cold', this)">Cold Brew</button>
+        <button class="cat-tab" onclick="filterMenu('tea', this)">Tea & Matcha</button>
+        <button class="cat-tab" onclick="filterMenu('pastry', this)">Pastries</button>
+      </div>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </main>
+
+  <footer>
+    <div class="logo">SmartCoffee</div>
+    <div>© 2026 SmartCoffeeShop. All rights reserved.</div>
+    <div>Made with great beans.</div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

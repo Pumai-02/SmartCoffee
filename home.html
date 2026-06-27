@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | SmartCoffeeShop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <a class="logo" href="home.html">SmartCoffee</a>
+    <ul class="nav-links">
+      <li><a href="home.html" id="nav-home" class="active">Home</a></li>
+      <li><a href="about.html" id="nav-about">About</a></li>
+      <li><a href="menu.html" id="nav-menu">Menu</a></li>
+      <li><a href="gallery.html" id="nav-gallery">Gallery</a></li>
+      <li><a href="order.html" id="nav-order">Order</a></li>
+      <li><a href="contact.html" id="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-dark" onclick="toggleDark()">Dark</button>
+      <a class="btn-cart" href="order.html">Cart <span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </nav>
+
+  <main id="page-home" class="page active">
+    <div class="hero">
+      <div class="hero-left">
+        <div class="hero-eyebrow">Specialty Coffee - Est. 2015</div>
+        <h1>Brewed with <span>passion</span>,<br>served with love.</h1>
+        <p class="hero-desc">Premium single-origin coffee, crafted by expert baristas. Order ahead for pickup, or get it delivered hot to your door in 30 minutes.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="order.html">Order now</a>
+          <a class="btn-secondary" href="menu.html">View menu</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="stat-card">
+          <div class="num">4.9</div>
+          <div class="stars">★★★★★</div>
+          <div class="lbl">2,400+ reviews</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">30<small style="font-size:18px">min</small></div>
+          <div class="lbl">Average delivery</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">40+</div>
+          <div class="lbl">Menu items</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature-item">
+        <div class="feature-icon">1</div>
+        <div>
+          <h3>Ethically sourced</h3>
+          <p>Direct-trade beans from sustainable farms in Ethiopia, Colombia and Guatemala.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">2</div>
+        <div>
+          <h3>Ready in 5 min</h3>
+          <p>Order ahead and skip the line every single time.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">3</div>
+        <div>
+          <h3>Hot delivery</h3>
+          <p>Insulated delivery bags keep your order at the perfect temperature.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="home-product">
+      <div class="home-product-img">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Flat White coffee">
+      </div>
+      <div class="home-product-info">
+        <div class="section-label">Featured product</div>
+        <h2>Signature Flat White</h2>
+        <p>Our best-selling flat white is made with double ristretto espresso and smooth micro-foam for a rich, balanced cup.</p>
+        <div class="home-product-bottom">
+          <span class="home-product-price">$4.50</span>
+          <button class="btn-primary" onclick="addToCart(1,'Flat White','FW',4.50)">Add to cart</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="section testimonials">
+      <div class="section-label">Customer love</div>
+      <div class="section-title">What people are saying</div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"Best flat white in the city. The quality never drops."</p>
+          <div class="t-author">Sarah M.</div>
+          <div class="t-role">Regular since 2022</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"The cold brew is smooth, bold and never bitter."</p>
+          <div class="t-author">James K.</div>
+          <div class="t-role">Remote worker</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"Delivery arrived hot, and the matcha latte was perfect."</p>
+          <div class="t-author">Priya R.</div>
+          <div class="t-role">Food blogger</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">SmartCoffee</div>
+    <div>© 2026 SmartCoffeeShop. All rights reserved.</div>
+    <div>Made with great beans.</div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

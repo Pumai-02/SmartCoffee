@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order | SmartCoffeeShop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <a class="logo" href="home.html">SmartCoffee</a>
+    <ul class="nav-links">
+      <li><a href="home.html" id="nav-home">Home</a></li>
+      <li><a href="about.html" id="nav-about">About</a></li>
+      <li><a href="menu.html" id="nav-menu">Menu</a></li>
+      <li><a href="gallery.html" id="nav-gallery">Gallery</a></li>
+      <li><a href="order.html" id="nav-order" class="active">Order</a></li>
+      <li><a href="contact.html" id="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-dark" onclick="toggleDark()">Dark</button>
+      <a class="btn-cart" href="order.html">Cart <span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </nav>
+
+  <main id="page-order" class="page active">
+    <div class="order-layout">
+      <div class="order-left">
+        <div class="section-label">Place your order</div>
+        <div class="section-title" style="margin-bottom:4px">What would you like?</div>
+        <p style="color:var(--text2);font-size:14px;margin-bottom:24px">All items are prepared fresh. Average prep time: 5 minutes.</p>
+
+        <div class="order-type-tabs">
+          <button class="order-tab active" id="tab-pickup" onclick="selectOrderType('pickup')">Pick up</button>
+          <button class="order-tab" id="tab-delivery" onclick="selectOrderType('delivery')">Delivery</button>
+        </div>
+
+        <div class="order-section-title">Espresso drinks</div>
+        <div class="order-items" id="orderEspresso"></div>
+        <div class="order-section-title">Cold drinks</div>
+        <div class="order-items" id="orderCold"></div>
+        <div class="order-section-title">Food</div>
+        <div class="order-items" id="orderFood"></div>
+      </div>
+
+      <div class="order-right">
+        <div class="cart-title">Your cart</div>
+        <div id="cartContents">
+          <div class="cart-empty">
+            <div class="icon">Cart</div>
+            Your cart is empty.<br><small>Add items from the left.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">SmartCoffee</div>
+    <div>© 2026 SmartCoffeeShop. All rights reserved.</div>
+    <div>Made with great beans.</div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
